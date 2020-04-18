@@ -5,8 +5,10 @@ import pandas as pd
 def main():
     args = sys.argv
     month = int(args[1])
-    if month in [2, 4, 6, 9, 11]:
+    if month in [4, 6, 9, 11]:
         date = 30
+    elif month == 2:
+        date = 28
     else:
         date = 31
     columns = []
